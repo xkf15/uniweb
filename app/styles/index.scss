@@ -70,7 +70,7 @@ $container_margin: 30px;
       .room_item {
         background: white;
         margin: 20px;
-        padding: 10px;
+        padding: 15px;
         .top {
           display: flex;
           .avatar {
@@ -93,13 +93,28 @@ $container_margin: 30px;
               }
             }
             .room_msg {
-              text-align: right
+              text-align: right;
+              .room_new_msg {
+                color: #cc4;
+              }
+              .room_new_member {
+                color: red;
+              }
             }
           }
         }
         .room_notes {
+          padding-top: 10px;
           display: flex;
           justify-content: space-between;
+          .room_time {
+            color: #ccc;
+          }
+          .room_icon_box {
+            .room_icon {
+              padding-left: 20px;
+            }
+          }
         }
       }
     }
