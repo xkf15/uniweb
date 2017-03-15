@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Uniworld{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/newroom.css -->
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/arrangement.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+<div id="header">
+  {% include 'navbar.html' %}
+</div>
+
+<div class="my_container">
+  <div class="header_content">
+
+  </div>
+  <div class="content">
+    <div class="sidebar">
+      <div class="dropdown_wrap side_box">
+        <div class="dropdown_me">
+          <button onclick="roomArrangement()" class="dropbtn">活动管理</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">房间信息</a>
+            <a href="#about">消息信息</a>
+            <a href="#about">成员管理</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_note side_box">
+        <div class="note_title">关于房间</div>
+        <div class="note_content">这是一些简单的说明和引导啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+      </div>
+    </div>
+    <div class="side_content">
+      <div class="side_header">最新消息</div>
+      <div class="announcement_wrap">
+        <div class="new_announcement">
+        <a href="#" class="new_announcement_text">发布新消息>></a>
+        </div>
+        <div class="announcement_title">
+          <div class="announcement_title_text">房间消息</div>
+          <div class="select_list">
+            <select>
+              <option value="all">全部</option>
+              <option value="?">？？？</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="announcement_content">
+        {% set foo = [0, 1, 2] %} {% for num in foo %}
+        <div class="notification">
+          <div class="notification_left">
+            <div class="run_title display_flex"><i class="fa fa-bullhorn" aria-hidden="true" id="icon-notification"></i>群公告</div>
+            <div class="run_text">进行中!</div>
+          </div>
+          <div class="notification_middle">
+            <div>谁怀孕了？谁怀孕了？谁怀孕了？谁怀孕了？谁怀孕了？谁怀孕了？谁怀孕了？谁怀孕了？</div>
+            <div class="time_domain">开始于2017-1-20 结束于2017-1-21 21:00截止 剩余1天20小时</div>
+          </div>
+          <div  class="notification_right">
+            <div>
+              <a onclick="">截止</a><span>|</span><a onclick="">删除</a>
+              <div class="people_num">人数10/30</div>
+              <div class="check_data" onclick="">查看数据</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<!-- build:js scripts/index.js -->
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+{% endblock %}
