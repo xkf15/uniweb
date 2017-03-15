@@ -1,36 +1,36 @@
 
 .information_wrap {
-  margin: 10px;
-  padding: 20px;
-  background: white;
-  .title {
-    font-size: 20px;
-  }
-  .subtitle {
-    font-size: 15px;
-    color: #aaa;
-  }
-  .information_content {
-    .information_item {
-      margin-top: 20px;
-      display: flex;
-      div {
-        padding: 5px;
-      }
-      .input1 {
-        flex: 1;
-        input {
-          width: 100%;
-        }
-      }
-      .input2 {
-        flex: 3;
-        input {
-          width: 100%;
-        }
-      }
-    }
-  }
+  padding-bottom: 50px;
+}
+
+.information_wrap .title {
+  font-size: 20px;
+}
+
+.information_wrap .subtitle {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.information_item div {
+  padding: 5px;
+}
+
+.information_item {
+  margin-top: 20px;
+  display: flex;
+}
+
+.input1 {
+  flex: 1;
+}
+
+.input1 input, .input2 input {
+  width: 100%;
+}
+
+.input2 {
+  flex: 3;
 }
 
 .add_one {
@@ -42,7 +42,7 @@
 
 
 .conformation {
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
   width: 100%;
 }

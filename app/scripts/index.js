@@ -27,6 +27,6 @@ $(document).ready(function () {
 });
   /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function roomArrangement() {
-    document.getElementById('myDropdown').classList.toggle('show');
-}
+// function roomArrangement() {
+//     document.getElementById('myDropdown').classList.toggle('show');
+// }
