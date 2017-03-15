@@ -1,0 +1,64 @@
+.procedure {
+  display: flex;
+  justify-content: space-around;
+  color: #aaa;
+  font-size: 20px;
+  margin: 30px 0;
+  .active {
+    color: red;
+  }
+}
+
+.information_wrap {
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: #aaa;
+  }
+  .information_content {
+    .information_item {
+      margin-top: 20px;
+      display: flex;
+      div {
+        padding: 5px;
+      }
+      .input1 {
+        flex: 1;
+        input {
+          width: 100%;
+        }
+      }
+      .input2 {
+        flex: 3;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.add_one {
+  font-size: 20px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.conformation {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+.conformation a {
+  background: #a03;
+  color: white;
+  padding: 10px 20%;
+}
