@@ -1,0 +1,95 @@
+a{
+  cursor: pointer;
+}
+.announcement_wrap{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.new_announcement{
+  margin: 10px;
+  text-align: right;
+}
+.new_announcement_text{
+  padding: 3px 25px 3px 25px;
+  text-align: right;
+  color: white;
+  border-radius: 6px;
+  width: 30px;
+  background-color: red;
+}
+.new_announcement_text:hover{
+  color: rgba(122,0,0,1);
+}
+.announcement_title{
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  line-height: 35px;
+  display: flex;
+}
+.announcement_title_text{
+  width: 50%;
+  margin-left: 20px;
+  text-align: left;
+}
+.select_list{
+  width: 50%;
+  margin-right: 20px;
+  text-align: right;
+}
+.announcement_content{
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+.notification{
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  display: flex;
+}
+.notification_left{
+  width:17%;
+}
+.display_flex{
+  display: flex;
+}
+#icon-notification{
+  color: darkblue;
+  padding-right:5px;
+  font-size: 1em;
+}
+.run_title{
+  font-size: 18px;
+  margin-left: 10%;
+}
+.run_text{
+  margin-top: 8px;
+  color: red;
+  margin-left: 10%;
+}
+.notification_middle{
+  width:60%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.time_domain{
+  opacity: 0.3;
+  margin-top: 20px;
+}
+.notification_right{
+  text-align: center;
+  width: 17%;
+}
+.people_num{
+  margin-top: 30px;
+  color: darkblue;
+}
+.check_data{
+  margin-top: 5px;
+  padding: 5px 0px;
+  color: white;
+  border-radius: 3px;
+  background-color: darkblue;
+}
