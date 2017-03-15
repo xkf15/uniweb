@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% block title %}Lab μ - 清华科创学生社团{% endblock %}
+
+{% block styles %}
+<!-- build:css styles/newroom.css -->
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/basicInfo.css">
+<!-- endbuild -->
+{% endblock %}
+
+{% block content %}
+
+<div id="header">
+  {% include 'navbar.html' %}
+</div>
+
+<div class="my_container">
+  <div class="header_content">
+  </div>
+  <div class="content">
+    <div class="sidebar">
+      <div class="dropdown_wrap side_box">
+        <div class="dropdown_me">
+          <button onclick="roomArrangement()" class="dropbtn">房间</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">房间管理</a>
+            <a href="#about">发布新房间</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_note side_box">
+        <div class="note_title">关于房间</div>
+        <div class="note_content">这是一些简单的说明和引导啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</div>
+      </div>
+    </div>
+
+    <div class="side_content">
+      <div class="side_header">房间>></div>
+      <div class="procedure">
+        <div class="active">1-填写基本信息>></div>
+        <div>2-成员信息>></div>
+        <div>3-确认>></div>
+        <div>4-发布>></div>
+      </div>
+
+      <div class="information_wrap">
+        <div class="info_tag">填写基本信息</div>
+        <div class="information_item">
+          <div class="title">
+            填写名称<span>*</span>
+          </div>
+          <div class="my_input">
+            <input type="text" placeholder="活动标题（不少于5个字）">
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            选择地点<span>*</span>
+          </div>
+          <div class="my_input">
+            <input type="text" placeholder="例如：北京市海淀区中关村南大街">
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            活动时间<span>*</span>
+          </div>
+          <div class="time">
+            <div class="time_item">
+              <div>开始时间</div>
+              <div><input type="date"><input type="time"></div>
+            </div>
+            <div class="time_item">
+              <div>结束时间</div>
+              <div><input type="date"><input type="time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            上传海报
+          </div>
+          <div class="my_input">
+            <div class="poster">
+              <img src="./images/background.jpg" alt="">
+            </div>
+            <div class="poster_content">
+              <div>
+                <a id="upload" href="#">上传</a>
+                <a id="no_poster" href="#">没有准备海报？</a>
+                <p>
+                  温馨提示：<br>
+                  可以点击上传选择图片，也可以直接拖拽或粘贴图片至此窗口
+                </p>
+              </div>
+              <div>
+                一张漂亮的海报，能让你的活动锦上添花，带来更多用户报名及增加传播效果
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            活动人数
+          </div>
+          <div class="my_input">
+            <input type="text" placeholder="100">
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            活动分类<span>*</span>
+          </div>
+          <div class="my_input">
+            <input type="text">
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            添加标签
+          </div>
+          <div class="my_input">
+            <input type="text">
+          </div>
+        </div>
+        <div class="information_item">
+          <div class="title">
+            详细内容<span>*</span>
+          </div>
+          <div class="my_input flex_colume">
+            <textarea name="" id="detail_content" cols="30" rows="10"></textarea>
+            <p>若已有微信推送，请直接粘贴</p>
+            <input type="text">
+
+            <p>准入学校（可多选）</p>
+            <div class="colleges">
+              <span>
+                <input id="tsinghua" type="checkbox">
+                <label for="tsinghua">清华大学</label>
+              </span>
+              <span>
+                <input id="bfjd" type="checkbox">
+                <label for="bfjd">北方交大</label>
+              </span>
+              <span>
+                <input id="gebi" type="checkbox">
+                <label for="gebi">隔壁</label>
+              </span>
+            </div>
+            <p>准入条件（将在用户选择加入时提醒）</p>
+            <input type="text">
+          </div>
+        </div>
+        <div class="submit_box">
+          <a href="#">下一步</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<!-- build:js scripts/index.js -->
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+
+{% endblock %}

@@ -1,0 +1,110 @@
+.information_wrap {
+  background: white;
+  margin: 10px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.colleges input {
+  display: none;
+}
+
+.colleges label {
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 5px 20px;
+  margin-right: 20px;
+}
+
+.colleges input:checked ~ label {
+  background: red;
+  color: white;
+}
+
+.info_tag {
+  padding: 10px;
+  background: red;
+  display: inline-block;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.information_item .title {
+  padding-right: 15px;
+}
+
+.information_item .title span {
+    color: red;
+}
+
+.information_item .my_input {
+  display: flex;
+  flex: 1;
+}
+.information_item .my_input input {
+  width: 100%;
+}
+
+.information_item {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.information_item .time {
+  display: flex;
+}
+
+.information_item .time .time_item {
+  margin-right: 20px;
+}
+
+.information_item .my_input .poster img {
+  width: 355px;
+  height: 200px;
+}
+
+.information_item .my_input .poster_content {
+  margin: 10px 20px;
+}
+
+.poster_content p {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+a#upload {
+  background: red;
+  color: white;
+  padding: 5px 40px;
+}
+
+a#no_poster {
+  color: red;
+  padding-left: 30px;
+}
+
+.flex_colume {
+  flex-direction: column;
+}
+
+.flex_colume p {
+  margin-top: 20px;
+}
+
+.my_input textArea#detail_content {
+  width: 100%;
+}
+
+.submit_box {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.submit_box a {
+  background: red;
+  color: white;
+  padding: 10px 100px;
+}
