@@ -378,3 +378,14 @@ $container_margin: 30px;
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
+
+.procedure {
+  display: flex;
+  justify-content: space-around;
+  color: #aaa;
+  font-size: 20px;
+  margin: 30px 0;
+  .active {
+    color: red;
+  }
+}
